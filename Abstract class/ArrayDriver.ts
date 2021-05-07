@@ -3,7 +3,6 @@ import { Circle } from './Circle';
 import { Rectanle } from './Rectangle';
 
 
-let s = new Shape(10, 20);
 let c = new Circle(10, 20, 30);
 let r = new Rectanle(0, 0, 3, 7);
 
@@ -12,10 +11,11 @@ let r = new Rectanle(0, 0, 3, 7);
 let theShapes: Shape[] = [];
 
 //add the shapes to the array 
-theShapes.push(s);
 theShapes.push(c);
 theShapes.push(r);
 
 for (let i = 0; i < theShapes.length; i++) {
     console.log(theShapes[i].getInfo());
+    console.log(theShapes[i].calculateArea());
+    console.log();
 }
